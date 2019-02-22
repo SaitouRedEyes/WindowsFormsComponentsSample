@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF3", "WF3\WF3.csproj", "{B713B637-9DE4-4318-A994-4D741BB173D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayersSelectionMission", "PlayersSelectionMission.csproj", "{34D20D03-0A53-4DB8-A77B-1D3D18C1C070}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B713B637-9DE4-4318-A994-4D741BB173D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B713B637-9DE4-4318-A994-4D741BB173D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B713B637-9DE4-4318-A994-4D741BB173D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B713B637-9DE4-4318-A994-4D741BB173D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34D20D03-0A53-4DB8-A77B-1D3D18C1C070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34D20D03-0A53-4DB8-A77B-1D3D18C1C070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34D20D03-0A53-4DB8-A77B-1D3D18C1C070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34D20D03-0A53-4DB8-A77B-1D3D18C1C070}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1A7AFABC-20E5-45A8-86C1-75BB56D8A97F}
+		SolutionGuid = {9487021F-984C-4C7B-B3B0-84504ECEAD9D}
 	EndGlobalSection
 EndGlobal

@@ -75,7 +75,7 @@ namespace WF2
                 !string.IsNullOrWhiteSpace(textBoxPassword.Text) &&
                 !string.IsNullOrWhiteSpace(textBoxConfPassword.Text) &&
                 !string.IsNullOrWhiteSpace(textBoxCountry.Text) &&
-                !string.IsNullOrWhiteSpace(textBoxState.Text) &&
+                !string.IsNullOrWhiteSpace(cbGender.Text) &&
                 !string.IsNullOrWhiteSpace(textBoxPhoneNumber.Text))
             {
                 return true;
@@ -98,7 +98,6 @@ namespace WF2
             {
                 return true;
             }
-            
         }
 
         private bool IsPasswordValid()
@@ -128,7 +127,7 @@ namespace WF2
         private void buttonClear_Click(object sender, EventArgs e)
         {
             textBoxName.Text = textBoxEmail.Text = textBoxPassword.Text = textBoxConfPassword.Text =
-            textBoxCountry.Text = textBoxState.Text = textBoxPhoneNumber.Text = string.Empty;
+            textBoxCountry.Text = cbGender.Text = textBoxPhoneNumber.Text = string.Empty;
         }
     }
 }

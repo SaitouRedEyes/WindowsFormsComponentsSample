@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordConstruct", "WordConstruct\WordConstruct.csproj", "{684B158F-395F-4F70-8916-D076CF78CE90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{684B158F-395F-4F70-8916-D076CF78CE90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{684B158F-395F-4F70-8916-D076CF78CE90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{684B158F-395F-4F70-8916-D076CF78CE90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{684B158F-395F-4F70-8916-D076CF78CE90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBA2349B-1501-4B89-B47C-0CD8FE60FB2E}
+	EndGlobalSection
+EndGlobal

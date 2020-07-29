@@ -7,34 +7,27 @@ namespace ButtonSample
 {
     public partial class Form1 : Form
     {
-        List<Card> cards;
-
         public Form1()
         {
             InitializeComponent();
-
-            cards = new List<Card>();
-
-            cards.Add(new Card(card1));
-            cards.Add(new Card(card2));
+            card1.Tag = "back";
+            card2.Tag = "back";
         }
 
-        private void Button1_mouseEnter(object sender, System.EventArgs e)
+        private void Button1_mouseEnter(object sender, EventArgs e)
         {
-            button1.Size = new Size(button1.Size.Width + 20, 
-                                    button1.Size.Height + 20);
+            button1.Size = new Size(button1.Size.Width + 20, button1.Size.Height + 20);
         }
 
-        private void Button1_mouseHover(object sender, System.EventArgs e)
+        private void Button1_mouseHover(object sender, EventArgs e)
         {
             button1.BackColor = Color.Blue;
         }
 
-        private void Button1_mouseLeave(object sender, System.EventArgs e)
+        private void Button1_mouseLeave(object sender, EventArgs e)
         {
             button1.BackColor = Color.LightGray;
-            button1.Size = new Size(button1.Size.Width - 20, 
-                                    button1.Size.Height - 20);
+            button1.Size = new Size(button1.Size.Width - 20, button1.Size.Height - 20);
         }
 
         private void Button1_mouseUp(object sender, MouseEventArgs e)
@@ -42,7 +35,7 @@ namespace ButtonSample
             button1.BackColor = Color.Blue;
         }
 
-        private void Button1_mouseClick(object sender, System.EventArgs e)
+        private void Button1_mouseClick(object sender, EventArgs e)
         {
             button1.BackColor = Color.Green;
         }
@@ -60,8 +53,7 @@ namespace ButtonSample
         // Memory Game Mechanic
         private void card1_MouseEnter(object sender, EventArgs e)
         {
-            card1.Size = new Size(card1.Size.Width + 10, 
-                                  card1.Size.Height + 10);
+            card1.Size = new Size(card1.Size.Width + 10, card1.Size.Height + 10);
         }
 
         private void card2_MouseEnter(object sender, EventArgs e)
@@ -71,8 +63,7 @@ namespace ButtonSample
 
         private void card1_MouseLeave(object sender, EventArgs e)
         {
-            card1.Size = new Size(card1.Size.Width - 10, 
-                                  card1.Size.Height - 10);
+            card1.Size = new Size(card1.Size.Width - 10, card1.Size.Height - 10);
         }
 
         private void card2_MouseLeave(object sender, EventArgs e)
@@ -82,33 +73,30 @@ namespace ButtonSample
 
         private void card1_MouseUp(object sender, MouseEventArgs e)
         {
-            ShowCard(cards[0]);
+            if((string)card1.Tag == "back")
+            {
+                card1.BackgroundImage = Properties.Resources.card_tyranitar_front;
+                card1.Tag = "front";
+            }
         }
 
         private void card2_MouseUp(object sender, MouseEventArgs e)
         {
-            ShowCard(cards[1]);
-        }
-
-        private void ShowCard(Card card)
-        {
-            if (card.front == false)
+            if ((string)card2.Tag == "back")
             {
-                card.myButton.BackgroundImage = Properties.Resources.card_tyranitar_front;
-                card.front = true;
+                card2.BackgroundImage = Properties.Resources.card_tyranitar_front;
+                card2.Tag = "front";
             }
         }
 
         private void HideCards(object sender, MouseEventArgs e)
         {
-            if(cards[0].front == true && 
-               cards[1].front == true)
+            if((string)card1.Tag == "front" && (string)card2.Tag == "front")
             {
-                foreach(Card c in cards)
-                {
-                    c.myButton.BackgroundImage = Properties.Resources.card_back;
-                    c.front = false;
-                }
+                card1.BackgroundImage = Properties.Resources.card_back;
+                card2.BackgroundImage = Properties.Resources.card_back;
+                card1.Tag = "back";
+                card2.Tag = "back";
             }
         }
     }

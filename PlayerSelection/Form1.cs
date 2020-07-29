@@ -17,10 +17,10 @@ namespace PlayerSelection
                                         Properties.Resources.Fulgore,
                                         Properties.Resources.Morrigan};
         private int currPlayer = 0;
-
+        
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();    
         }
 
         private void selector2_Click(object sender, EventArgs e)

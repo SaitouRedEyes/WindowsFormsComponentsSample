@@ -23,18 +23,18 @@ namespace WF3_5
             {
                 if(MeasuresCB.SelectedItem.Equals("Fahrenheit"))
                 {
-
-                    result.Text = ((float.Parse(celsiusTB.Text) * 9 / 5) + 32) + "F";
+                    cbResults.Items.Add(((float.Parse(celsiusTB.Text) * 9 / 5) + 32) + "F");
                 }
                 else
                 {
-                    result.Text = (float.Parse(celsiusTB.Text) + 273.15) + "K";
+                    cbResults.Items.Add((float.Parse(celsiusTB.Text) + 273.15) + "K");
                 }
+
+                MessageBox.Show("Conversão feita com sucesso!");
             }
             else
             {
                 MessageBox.Show("Insira um valor de temperatura válido");
-                result.Text = "";
             }
         }
 

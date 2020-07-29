@@ -80,9 +80,9 @@
             this.checkBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.checkBox1.Location = new System.Drawing.Point(401, 36);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(50, 17);
+            this.checkBox1.Size = new System.Drawing.Size(76, 17);
             this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "evo1";
+            this.checkBox1.Text = "evolução1";
             this.checkBox1.UseVisualStyleBackColor = false;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.ChangeImage);
             // 
@@ -91,18 +91,18 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(401, 61);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(50, 17);
+            this.checkBox2.Size = new System.Drawing.Size(76, 17);
             this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "evo2";
+            this.checkBox2.Text = "evolução2";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.ChangeImage);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(706, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(649, 36);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(267, 278);
+            this.pictureBox1.Size = new System.Drawing.Size(140, 147);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 

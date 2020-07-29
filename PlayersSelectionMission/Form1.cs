@@ -23,11 +23,11 @@ namespace PlayersSelectionMission
             }
             else
             {
-                ValidateMission("Mago");
+                ValidateMission();
             }
         }
 
-        private void ValidateMission(string charsRequired)
+        private void ValidateMission()
         {
             if(mage.Checked == true)
             {
@@ -41,7 +41,7 @@ namespace PlayersSelectionMission
 
         private void ValidateMission(int charsRequired)
         {
-            var number = 0;
+            int number = 0;
 
             if(warrior.Checked == true)
             {

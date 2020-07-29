@@ -12,7 +12,7 @@ namespace WF1
 {
     public partial class Form1 : Form
     {
-        private float potionsValue;
+        private int potionsValue;
         private int potionsNumber;
 
         public Form1()
@@ -25,9 +25,18 @@ namespace WF1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked) potionsNumber = 1;
-            else if (radioButton2.Checked) potionsNumber = 5;
-            else potionsNumber = 10;
+            if (radioButton1.Checked)
+            {
+                potionsNumber = 1;
+            }
+            else if (radioButton2.Checked)
+            {
+                potionsNumber = 5;
+            }
+            else
+            {
+                potionsNumber = 10;
+            }
 
             MessageBox.Show("Total Value is: $" + potionsValue * potionsNumber);
         }
@@ -47,7 +56,7 @@ namespace WF1
             UpdatePotionValue(checkBox3, 15);
         }
 
-        private void UpdatePotionValue(CheckBox cb, float potionValue)
+        private void UpdatePotionValue(CheckBox cb, int potionValue)
         {
             if (cb.Checked)
                 potionsValue += potionValue;

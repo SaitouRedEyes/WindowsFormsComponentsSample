@@ -24,7 +24,12 @@ namespace LabelTextBoxSample
             {
                 try
                 {
-                    resultLabel.Text = (float.Parse(n1TextBox.Text) + float.Parse(n2TextBox.Text)).ToString();
+                    float n1 = float.Parse(n1TextBox.Text);
+                    float n2 = float.Parse(n2TextBox.Text);
+
+                    float result = n1 + n2;
+
+                    resultLabel.Text = result.ToString();
                 }
                 catch(FormatException)
                 {
@@ -35,6 +40,11 @@ namespace LabelTextBoxSample
             {
                 MessageBox.Show("Insira um valor");
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("label clicado");
         }
     }
 }

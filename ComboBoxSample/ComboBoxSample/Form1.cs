@@ -12,6 +12,8 @@ namespace ComboBoxSample
 {
     public partial class Form1 : Form
     {
+        List<string> myTypes;
+
         public Form1()
         {
             InitializeComponent();

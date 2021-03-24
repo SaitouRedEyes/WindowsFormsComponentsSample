@@ -128,6 +128,6 @@ namespace WF2
         {
             textBoxName.Text = textBoxEmail.Text = textBoxPassword.Text = textBoxConfPassword.Text =
             textBoxCountry.Text = cbGender.Text = textBoxPhoneNumber.Text = string.Empty;
-        }
+        }       
     }
 }

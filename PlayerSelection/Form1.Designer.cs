@@ -40,13 +40,13 @@
             this.player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.player.Location = new System.Drawing.Point(202, 12);
             this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(374, 351);
+            this.player.Size = new System.Drawing.Size(374, 466);
             this.player.TabIndex = 0;
             this.player.TabStop = false;
             // 
             // selector2
             // 
-            this.selector2.Location = new System.Drawing.Point(603, 162);
+            this.selector2.Location = new System.Drawing.Point(603, 224);
             this.selector2.Name = "selector2";
             this.selector2.Size = new System.Drawing.Size(75, 55);
             this.selector2.TabIndex = 1;
@@ -56,7 +56,7 @@
             // 
             // selector1
             // 
-            this.selector1.Location = new System.Drawing.Point(108, 166);
+            this.selector1.Location = new System.Drawing.Point(107, 224);
             this.selector1.Name = "selector1";
             this.selector1.Size = new System.Drawing.Size(75, 55);
             this.selector1.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 490);
             this.Controls.Add(this.selector1);
             this.Controls.Add(this.selector2);
             this.Controls.Add(this.player);

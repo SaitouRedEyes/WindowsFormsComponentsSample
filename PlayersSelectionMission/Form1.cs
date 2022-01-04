@@ -15,12 +15,8 @@ namespace PlayersSelectionMission
         {
             if(mission1.Checked == true)
             {
-                ValidateMission(4);
-            }
-            else if(mission2.Checked == true)
-            {
-                ValidateMission(1);
-            }
+                ValidateMission(2);
+            }            
             else
             {
                 ValidateMission();
@@ -56,17 +52,7 @@ namespace PlayersSelectionMission
             if (archer.Checked == true)
             {
                 number++;
-            }
-
-            if (cleric.Checked == true)
-            {
-                number++;
-            }
-
-            if (assassin.Checked == true)
-            {
-                number++;
-            }
+            }           
 
             if(number >= charsRequired)
             {
@@ -75,8 +61,7 @@ namespace PlayersSelectionMission
             else
             {
                 MessageBox.Show("É preciso cumprir os requisitos da missão");
-            }
-            
+            }            
         }
     }
 }

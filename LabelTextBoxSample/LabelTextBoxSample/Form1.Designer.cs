@@ -35,6 +35,7 @@
             this.n2TextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.resultLabel = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -106,11 +107,20 @@
             this.resultLabel.TabIndex = 6;
             this.resultLabel.Text = "Resultado";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(272, 58);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 306);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.resultLabel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.n2TextBox);
@@ -134,6 +144,7 @@
         private System.Windows.Forms.TextBox n2TextBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label resultLabel;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

@@ -13,7 +13,7 @@ namespace WF3
 
         private void buttonAddPlayer_Click(object sender, EventArgs e)
         {
-            if(!tbPlayer.Text.Equals("") && CouldAddPlayer(tbPlayer.Text))
+            if(!tbPlayer.Text.Equals("")) 
             {
                 cbPlayers.Items.Add(tbPlayer.Text);
 
@@ -23,19 +23,7 @@ namespace WF3
             {
                 MessageBox.Show("Não podemos adicionar este jogador");
             }
-        }
-
-        private Boolean CouldAddPlayer(string newPlayer)
-        {
-            if(cbPlayers.Items.Contains(newPlayer))
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
+        }       
 
         private void cbPlayers_SelectedIndexChanged(object sender, EventArgs e)
         {

@@ -30,6 +30,8 @@ namespace LabelTextBoxSample
                     float result = n1 + n2;
 
                     resultLabel.Text = result.ToString();
+
+                    comboBox1.Items.Add(result.ToString());
                 }
                 catch(FormatException)
                 {

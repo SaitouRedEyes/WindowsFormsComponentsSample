@@ -18,50 +18,43 @@ namespace WF1
         public Form1()
         {
             InitializeComponent();
-
-            potionsValue = 0;
-            potionsNumber = 1;
+            
+            potionsNumber = 3;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            potionsValue = 0;
+
+            if (checkBox1.Checked)
+            {
+                potionsValue += 3;
+            }
+
+            if (checkBox2.Checked)
+            {
+                potionsValue += 6;
+            }
+
+            if (checkBox3.Checked)
+            {
+                potionsValue += 9;
+            }
+
             if (radioButton1.Checked)
             {
                 potionsNumber = 1;
             }
             else if (radioButton2.Checked)
             {
-                potionsNumber = 5;
+                potionsNumber = 10;
             }
             else
             {
-                potionsNumber = 10;
-            }
+                potionsNumber = 100;
+            }            
 
             MessageBox.Show("Total Value is: $" + potionsValue * potionsNumber);
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            UpdatePotionValue(checkBox1, 5);
-        }
-        
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        {
-            UpdatePotionValue(checkBox2, 10);
-        }
-
-        private void checkBox3_CheckedChanged(object sender, EventArgs e)
-        {
-            UpdatePotionValue(checkBox3, 15);
-        }
-
-        private void UpdatePotionValue(CheckBox cb, int potionValue)
-        {
-            if (cb.Checked)
-                potionsValue += potionValue;
-            else
-                potionsValue -= potionValue;
-        }
+        }      
     }
 }
